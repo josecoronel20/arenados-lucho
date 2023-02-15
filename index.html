@@ -20,66 +20,65 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
-            <div class="container-fluid  bg-nav">
-                <a class="navbar-brand d-flex align-items-center wow animate__animated animate__fadeIn"
-                    href="index.html">
-                    <img src="img/logo-shark-white.png" alt="logo-sharked" width="30" height="24"
-                        class="d-inline-block align-text-top">
-                    <h5 class="m-0">ARENADOS LUCHO</h5>
-                </a>
-                <button class="navbar-toggler wow animate__animated animate__fadeIn" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span>&#8801</span>
-                </button>
-                <div class="collapse"
-                    id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0 ">
-                        <li class="nav-item ">
-                            <a class="nav-link text-hover" href="pages/sobreNosotros.html">Servicios</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link text-hover" href="pages/galeriaDeTrabajos.html">Sobre nosotros</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link text-hover" href="pages/pideTuPagina.html">Nuestros trabajos</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link text-hover" href="pages/desarrollopagina.html">Pedí tu presupuesto</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link text-hover" href="pages/desarrollopagina.html">Contactanos</a>
-                        </li>
-                </div>
-            </div>
+        <input class="input-checkbox" type="checkbox" name="" id="toggle">
+
+        <nav>
+            <a href="" class="navbar-brand">
+                <img src="" alt="">
+                <p href="">ARENADOS LUCHO</p>
+            </a>
+
+            <label class="navbar-toggler" for="toggle">
+                <span>&#8801</span>
+            </label>
+
+            <ul class="navbar-list">
+                <li class="nav-item">
+                    <a href="#servicios"> Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre-nosotros"> Sobre nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#nuestros-trabajos"> Nuestros trabajos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#presupuesto"> Pedí tu presupuesto</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contactanos"> Contáctanos</a>
+                </li>
+            </ul>
         </nav>
-        <div class="hero">
+
+    </header>
+    <section class="hero">
+        <div class="hero-content">
             <div class="logo-hero">
                 <img src="" alt="">
                 <h1>ARENADOS LUCHO</h1>
             </div>
             <h5>Nos especializamos en la recuperación de superficies mediante el arenado por chorro de arena a presión.
             </h5>
-            <a href="">Pedir un presupuesto</a>
+            <button class="button-48" role="button"><span class="text">Pedir un presupuesto</span></button>
         </div>
-    </header>
-    <main id="servicios">
+    </section>
+    <main id="servicios" class="container servicios-container">
         <h5>El arenado es un proceso mediante el cual se erosiona la parte más externa y superficial de un material
             mediante una abrasión generada por un chorro de arena y aire.</h5>
-        <div>
+        <div class="servicios-description">
             <div>
                 <h2>NUESTROS SERVICIOS</h2>
                 <ul>
-                    <li>Piscinas: Arenado para revestir (quitar todo el material superficial) o para pintar (quitar
+                    <li><b>Piscinas:</b> Arenado para revestir (quitar todo el material superficial) o para pintar (quitar
                         levemente el material superficial), también aplicamos pintura si asi lo requiere.</li>
 
-                    <li>Carroceria: Quitamos el óxido o pintura vieja de camiones, chasis, semis, volcadoras, etc.</li>
+                    <li><b>Carroceria:</b> Quitamos el óxido o pintura vieja de camiones, chasis, semis, volcadoras, etc.</li>
 
-                    <li>Industria: arenado sobre todo tipo de superficies tales como hormigón, madera, mármol, cerámico,
+                    <li><b>Industria:</b> arenado sobre todo tipo de superficies tales como hormigón, madera, mármol, cerámico,
                         etc.</li>
 
-                    <li>Caldereria: recipientes, tolvas, silos, etc.
+                    <li><b>Caldereria:</b> recipientes, tolvas, silos, etc.
                     </li>
                 </ul>
             </div>
@@ -178,7 +177,7 @@
             <input type="button" value="ENVIAR">
         </form>
     </section>
-    <footer>
+    <footer id="contactanos">
         <div class="logo-footer">
             <img src="" alt="">
             <h5>ARENADOS LUCHO</h5>

@@ -1,3 +1,16 @@
 $claroS: #E4BB97;
 $claro: #FEF5EF;
 $oscuro: #584B53;
+$oscuroS: #453941;
+
+@mixin d-flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin py{
+    padding: 15% 0;
+}
+
