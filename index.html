@@ -16,10 +16,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap"
         rel="stylesheet">
+
+
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <input class="input-checkbox" type="checkbox" name="" id="toggle">
 
         <nav>
@@ -70,12 +72,15 @@
             <div>
                 <h2>NUESTROS SERVICIOS</h2>
                 <ul>
-                    <li><b>Piscinas:</b> Arenado para revestir (quitar todo el material superficial) o para pintar (quitar
+                    <li><b>Piscinas:</b> Arenado para revestir (quitar todo el material superficial) o para pintar
+                        (quitar
                         levemente el material superficial), también aplicamos pintura si asi lo requiere.</li>
 
-                    <li><b>Carroceria:</b> Quitamos el óxido o pintura vieja de camiones, chasis, semis, volcadoras, etc.</li>
+                    <li><b>Carroceria:</b> Quitamos el óxido o pintura vieja de camiones, chasis, semis, volcadoras,
+                        etc.</li>
 
-                    <li><b>Industria:</b> arenado sobre todo tipo de superficies tales como hormigón, madera, mármol, cerámico,
+                    <li><b>Industria:</b> arenado sobre todo tipo de superficies tales como hormigón, madera, mármol,
+                        cerámico,
                         etc.</li>
 
                     <li><b>Caldereria:</b> recipientes, tolvas, silos, etc.
@@ -124,60 +129,96 @@
             </div>
         </div>
     </main>
-    <section id="sobre-nosotros">
+    <section id="sobre-nosotros" class="container sobre-nosotros-container">
         <h2>¿QUIÉNES SOMOS?</h2>
-        <div>
-            <img src="" alt="">
+        <div class="quienes-somos">
+            <img src="img/hero.webp" alt="">
             <p>Somos Arenados Lucho, un negocio familiar con más de 18 años de experiencia en el rubro.
                 Contamos con equipo especializado para realizar trabajos de calidad y así garantizar la satisfacción de
                 cada cliente.
             </p>
         </div>
-        <div>
+        <div class="clientes">
             <h3>Algunos clientes que nos siguen eligiendo</h3>
+            <div class="clientes-img">
+                <img src="img/hero.webp" alt="">
+                <img src="img/hero.webp" alt="">
+                <img src="img/hero.webp" alt="">
+                <img src="img/hero.webp" alt="">
+                <img src="img/hero.webp" alt="">
+                <img src="img/hero.webp" alt="">
+            </div>
             <!-- agregar clientes -->
         </div>
     </section>
-    <section id="nuestros-trabajos">
+    <section id="nuestros-trabajos" class="container trabajos-container">
         <h2>Aqui se encuentran algunos trabajos</h2>
         <div class="galeria">
             <div class="cards">
-                <img src="" alt="">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia provident officia deserunt illum
-                    labore</p>
+                <img src="img/hero.webp" alt="">
+                <p>Trabajos de pileta</p>
+                <button class="button-48" role="button"><span class="text">Ver más</span></button>
+            </div>
+            <div class="cards">
+                <img src="img/hero.webp" alt="">
+                <p>Trabajos de pared</p>
+                <button class="button-48" role="button"><span class="text">Ver más</span></button>
+            </div>
+            <div class="cards">
+                <img src="img/hero.webp" alt="">
+                <p>Trabajos de carrocerias</p>
+                <button class="button-48" role="button"><span class="text">Ver más</span></button>
+            </div>
+            <div class="cards">
+                <img src="img/hero.webp" alt="">
+                <p>Trabajos de pintura</p>
+                <button class="button-48" role="button"><span class="text">Ver más</span></button>
             </div>
             <!-- agregar cards con imagenes de trabajos -->
         </div>
     </section>
-    <section id="presupuesto">
+    <section id="presupuesto" class="container presupuesto-container">
         <h2>PEDÍ TU PRESUPUESTO</h2>
         <form action="">
-            <input type="text" name="Nombre y apellido" placeholder="Nombre y apellido" id="">
+            <input type="text" name="Nombre y apellido" placeholder="Nombre y apellido" id="" required>
 
-            <input type="number" name="Número de telefono" placeholder="Número de telefono" id="">
+            <input type="number" name="Número de telefono" placeholder="Número de telefono" id="" required>
 
-            <input type="email" name="Email" placeholder="Email" id="">
+            <input type="email" name="Email" placeholder="Email" id="" required>
 
-            <div>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>¿Qué querés arenar?</option>
-                    <option value="1">Pileta</option>
-                    <option value="2">Pared</option>
-                    <option value="3">Mueble</option>
-                    <option value="3">Otro</option>
-                </select>
+            <div class="options-container">
+                <p>¿Qué querés arenar?</p>
+                <div class="options">
+                    <select name="opciones" id="" required>
+                        <option value="pileta">pileta</option>
+                        <option value="php">PHP</option>
+                        <option value="java">Java</option>
+                        <option value="golang">Golang</option>
+                        <option value="python">Python</option>
+                        <option value="c#">C#</option>
+                        <option value="C++">C++</option>
+                        <option value="erlang">Erlang</option>
+                    </select>
 
-                <input type="text" name="" placeholder="medidas aproximadas" id="">
+                    <input type="text" name="" placeholder="cantidad y medidas aproximadas" id="" required>
+                </div>
             </div>
 
             <input type="text" name="" placeholder="¿Dónde estás ubicado?" id="">
 
             <input type="text" name="" placeholder="¿Algo más que quisieras comentar?" id="">
 
-            <input type="button" value="ENVIAR">
+            <button class="button-48" role="button"><span class="text"><input type="submit" value="ENVIAR"
+                        class="enviar"></span></button>
+
         </form>
     </section>
-    <footer id="contactanos">
+    <div class="button-top">
+        <a href="#header">
+            <iconify-icon icon="material-symbols:arrow-circle-up" style="color: #e4bb97;" width="50"></iconify-icon>
+        </a>
+    </div>
+    <footer id="contactanos" class="container contactanos-container">
         <div class="logo-footer">
             <img src="" alt="">
             <h5>ARENADOS LUCHO</h5>
@@ -209,6 +250,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
         integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
         crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
 </body>
 
 </html>
