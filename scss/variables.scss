@@ -3,11 +3,11 @@ $claro: #FEF5EF;
 $oscuro: #584B53;
 $oscuroS: #453941;
 
-@mixin d-flex-column {
+@mixin d-flex-column($row,$start){
     display: flex;
-    flex-direction: column;
+    flex-direction: $row;
     justify-content: center;
-    align-items: center;
+    align-items: $start;
 }
 
 @mixin py{

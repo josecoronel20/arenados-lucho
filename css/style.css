@@ -137,12 +137,12 @@ nav {
 
 /*hero--------------------------------------------------------------------------*/
 .hero {
-  background: linear-gradient(rgba(88, 75, 83, 0.6), rgba(88, 75, 83, 0.6)), url(img/hero.webp);
-  background-position: center;
+  background: linear-gradient(rgba(88, 75, 83, 0.6), rgba(88, 75, 83, 0.6)), url(/img/hero.webp);
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -157,15 +157,31 @@ nav {
     align-items: center;
     gap: 15px; }
 
+@media screen and (min-width: 768px) {
+  .hero {
+    background: linear-gradient(to right, #584b53, transparent), url(/img/hero.webp);
+    background-size: cover; }
+    .hero .hero-content {
+      padding: 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start !important; }
+      .hero .hero-content h5 {
+        text-align: start;
+        width: 50%; } }
+
 /*servicios------------------------------------------------------------------------*/
-.servicios-container {
+#servicios {
+  background-color: #584B53;
   position: relative;
-  z-index: -2;
+  z-index: -2; }
+
+.servicios-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #584B53;
   padding: 15% 0;
   color: #FEF5EF;
   gap: 4rem; }
@@ -192,19 +208,36 @@ nav {
         color: #E4BB97; }
       .servicios-container .servicios-description ul li {
         text-align: start; }
+  .servicios-container .carousel .carousel-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .servicios-container .carousel img {
     border-radius: 15px; }
 
+@media screen and (min-width: 768px) {
+  .carousel {
+    width: 70%; }
+  .servicios-container h5,
+  .servicios-container .servicios-description h2,
+  .servicios-container .servicios-description ul {
+    margin-bottom: 4rem; } }
+
 /*sobre nosotros------------------------------------------*/
+#sobre-nosotros {
+  background-color: #453941; }
+
 .sobre-nosotros-container {
   padding: 15% 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #453941;
   color: #E4BB97; }
-  .sobre-nosotros-container h2, .sobre-nosotros-container .quienes-somos img, .sobre-nosotros-container .clientes h3 {
+  .sobre-nosotros-container h2,
+  .sobre-nosotros-container .quienes-somos img,
+  .sobre-nosotros-container .clientes h3 {
     margin-bottom: 2rem; }
   .sobre-nosotros-container .quienes-somos img {
     width: 100%;
@@ -223,15 +256,31 @@ nav {
         width: 100%;
         border-radius: 15px; }
 
+@media screen and (min-width: 768px) {
+  .sobre-nosotros-container h2,
+  .sobre-nosotros-container .clientes h3 {
+    margin-bottom: 4rem; }
+  .sobre-nosotros-container .clientes-img {
+    grid-template-columns: repeat(3, 1fr) !important; }
+  .quienes-somos {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center; }
+    .quienes-somos img {
+      width: 50% !important; } }
+
 /*nuestros trabajos-----------------------------------------------------------*/
+#nuestros-trabajos {
+  background-color: #584B53; }
+
 .trabajos-container {
   padding: 15% 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
-  background-color: #584B53; }
+  gap: 4rem; }
   .trabajos-container h2 {
     color: #E4BB97; }
   .trabajos-container .galeria {
@@ -253,9 +302,19 @@ nav {
         width: 100%;
         border-radius: 10px; }
 
+@media screen and (min-width: 768px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr) !important; } }
+
+@media screen and (min-width: 1024px) {
+  .galeria {
+    grid-template-columns: repeat(4, 1fr) !important; } }
+
 /*presupuesto------------------------------------------------------------------*/
+#presupuesto {
+  background-color: #453941; }
+
 .presupuesto-container {
-  background-color: #453941;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -266,12 +325,16 @@ nav {
     margin-bottom: 2rem; }
   .presupuesto-container form {
     width: 80%;
+    background-color: #584B53;
+    padding: 2rem;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem; }
-    .presupuesto-container form input, .presupuesto-container form select {
+    .presupuesto-container form input,
+    .presupuesto-container form select {
       width: 100%;
       padding: 5px;
       background-color: #FEF5EF;
@@ -284,10 +347,11 @@ nav {
         color: #FEF5EF; }
     .presupuesto-container form .options {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       justify-content: center;
       align-items: center;
-      gap: 2rem; }
+      gap: 2rem;
+      margin-top: 2rem; }
     .presupuesto-container form .enviar {
       border: none;
       background: none;
@@ -295,18 +359,23 @@ nav {
       color: #584B53; }
 
 /*contacto----------------------------------------------------------------------*/
+#contactanos {
+  background-color: #584B53; }
+
 .contactanos-container {
   padding: 15% 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #584B53;
   color: #FEF5EF;
   gap: 2rem; }
-  .contactanos-container h4, .contactanos-container h5 {
+  .contactanos-container h4,
+  .contactanos-container h5 {
     color: #E4BB97; }
-  .contactanos-container h4, .contactanos-container h5, .contactanos-container p {
+  .contactanos-container h4,
+  .contactanos-container h5,
+  .contactanos-container p {
     margin: 0; }
   .contactanos-container * {
     display: flex;
@@ -315,7 +384,13 @@ nav {
     align-items: center;
     gap: 1rem; }
   .contactanos-container iframe {
-    border-radius: 15px; }
+    border-radius: 15px;
+    margin-top: 2rem; }
+
+@media screen and (min-width: 768px) {
+  .info-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); } }
 
 /*button top---------------------------------------------------------------------*/
 .button-top {
