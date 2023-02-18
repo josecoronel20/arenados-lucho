@@ -137,7 +137,7 @@ nav {
 
 /*hero--------------------------------------------------------------------------*/
 .hero {
-  background-image: linear-gradient(rgba(88, 75, 83, 0.6), rgba(88, 75, 83, 0.6)), url(img/hero.jpg);
+  background-image: linear-gradient(rgba(88, 75, 83, 0.6), rgba(88, 75, 83, 0.6)), url(../img/hero.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -398,11 +398,49 @@ nav {
   position: fixed;
   right: 10px;
   bottom: 10px;
-  z-index: 0; }
+  z-index: 10; }
 
 /*button wpp--------------------------------------------------------------------*/
 .button-wpp {
   position: fixed;
   left: 10px;
   bottom: 10px;
-  z-index: 0; }
+  z-index: 10; }
+
+/*page pileta-------------------------------------------------------------------*/
+/*page pileta-------------------------------------------------------------------*/
+/*page pileta-------------------------------------------------------------------*/
+#arenado {
+  background-color: #584B53; }
+  #arenado .arenado-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #arenado .arenado-container h1 {
+      padding: 4rem 0;
+      color: #E4BB97; }
+    #arenado .arenado-container .trabajos {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      column-gap: 2rem;
+      row-gap: 2rem; }
+      #arenado .arenado-container .trabajos .carousel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        #arenado .arenado-container .trabajos .carousel img {
+          border-radius: 15px; }
+
+@media screen and (min-width: 768px) {
+  .trabajos {
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr) !important; }
+    .trabajos .carousel {
+      width: 100%; } }
+
+@media screen and (min-width: 992px) {
+  .trabajos {
+    grid-template-columns: repeat(3, 1fr) !important; } }
