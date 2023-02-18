@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arenado de piletas | Arenados lucho</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header id="header">
+        <input class="input-checkbox" type="checkbox" name="" id="toggle">
+
+        <nav>
+            <a href="" class="navbar-brand">
+                <img src="" alt="">
+                <p href="">ARENADOS LUCHO</p>
+            </a>
+
+            <label class="navbar-toggler" for="toggle">
+                <span>&#8801</span>
+            </label>
+
+            <ul class="navbar-list">
+                <li class="nav-item">
+                    <a href="#servicios"> Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sobre-nosotros"> Sobre nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#nuestros-trabajos"> Nuestros trabajos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#presupuesto"> Pedí tu presupuesto</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contactanos"> Contáctanos</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <main id="arenado-content">
+        <div class="container">
+            
+        </div>
+    </main>
+
+    <div class="button-top">
+        <a href="#header">
+            <iconify-icon icon="material-symbols:arrow-circle-up" style="color: #e4bb97;" width="50"></iconify-icon>
+        </a>
+    </div>
+    <div class="button-wpp">
+        <a href="https://wa.me/541154797863">
+            <iconify-icon icon="ic:baseline-whatsapp" style="color: #25d366;" width="50"></iconify-icon>
+        </a>
+    </div>
+
+    <footer id="contactanos">
+        <div class="container contactanos-container">
+            <div class="logo-footer">
+                <img src="" alt="">
+                <h5>ARENADOS LUCHO</h5>
+            </div>
+            <div class="info-container">
+                <div>
+                    <h4>Contactanos</h4>
+                    <div>
+                        <p>Número de telefono: 11 2378-7750 / 11 3433-5049</p>
+                        <p>Mail: Arenadoslucho@hotmial.com</p>
+                    </div>
+                </div>
+                <div>
+                    <h4>Dónde nos ubicamos</h4>
+                    <div>
+                        <p>Abella Caprile 1246 - (1669) Del Viso, Bs. As.</p>
+                        <p>Lun a Sáb de 8.00 a 18.00 hs.</p>
+                    </div>
+                </div>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3290.5208009111143!2d-58.807695684240876!3d-34.438925356305276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9ec0037e0915%3A0xda7074c4746e4e42!2sAbella%20Caprile%201246%2C%20B1669AWE%20Del%20Viso%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1676400091160!5m2!1ses-419!2sar"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+    <script>
+        const $form = document.querySelector("#form")
+
+        $form.addEventListener("submit", handleSubmit)
+
+        async function handleSubmit(event) {
+            event.preventDefault()
+            const form = new FormData(this)
+            const response = await fetch(this.action, {
+                method: this.method,
+                body: form,
+                headers: {
+                    "Accept": "application/json"
+                }
+            })
+            if (response.ok){
+                this.reset()
+                alert("!Gracias por contactarnos, te responderemos a la brevedad¡")
+            }
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
+</body>
+
+</html>
