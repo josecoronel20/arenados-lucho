@@ -208,17 +208,18 @@ nav {
         color: #E4BB97; }
       .servicios-container .servicios-description ul li {
         text-align: start; }
-  .servicios-container .carousel .carousel-caption {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  .servicios-container .carousel img {
+  .servicios-container video {
+    width: 80%;
     border-radius: 15px; }
 
 @media screen and (min-width: 768px) {
-  .carousel {
-    width: 70%; }
+  .servicios-description {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center; }
+    .servicios-description video {
+      width: 50%; }
   .servicios-container h5,
   .servicios-container .servicios-description h2,
   .servicios-container .servicios-description ul {
@@ -239,11 +240,17 @@ nav {
   .sobre-nosotros-container .quienes-somos img,
   .sobre-nosotros-container .clientes h3 {
     margin-bottom: 2rem; }
-  .sobre-nosotros-container .quienes-somos img {
-    width: 100%;
-    border-radius: 15px; }
-  .sobre-nosotros-container .quienes-somos p {
-    color: #FEF5EF; }
+  .sobre-nosotros-container .quienes-somos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; }
+    .sobre-nosotros-container .quienes-somos img {
+      width: 85%;
+      border-radius: 15px; }
+    .sobre-nosotros-container .quienes-somos p {
+      color: #FEF5EF; }
   .sobre-nosotros-container .clientes {
     margin-top: 8rem; }
     .sobre-nosotros-container .clientes .clientes-img {
@@ -300,15 +307,21 @@ nav {
         font-weight: 500; }
       .trabajos-container .galeria .cards img {
         width: 100%;
-        border-radius: 10px; }
+        height: 300px;
+        border-radius: 10px;
+        object-fit: cover; }
 
 @media screen and (min-width: 768px) {
-  .galeria {
-    grid-template-columns: repeat(2, 1fr) !important; } }
+  .galeria .cards img {
+    width: 70%; } }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 992px) {
   .galeria {
-    grid-template-columns: repeat(4, 1fr) !important; } }
+    grid-template-columns: repeat(3, 1fr) !important; }
+    .galeria .cards {
+      width: 100%; }
+      .galeria .cards img {
+        width: 200px; } }
 
 /*presupuesto------------------------------------------------------------------*/
 #presupuesto {
@@ -432,15 +445,3 @@ nav {
         align-items: center; }
         #arenado .arenado-container .trabajos .carousel img {
           border-radius: 15px; }
-
-@media screen and (min-width: 768px) {
-  .trabajos {
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: repeat(2, 1fr) !important; }
-    .trabajos .carousel {
-      width: 100%; } }
-
-@media screen and (min-width: 992px) {
-  .trabajos {
-    grid-template-columns: repeat(3, 1fr) !important; } }
