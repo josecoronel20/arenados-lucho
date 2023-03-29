@@ -568,16 +568,52 @@ nav {
         .trabajos {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
-            column-gap: 2rem;
-            row-gap: 2rem;
+            gap: 3rem;
 
             .carousel {
-                @include d-flex-column(column, center);
+                display: flex;
+                align-items: center;
 
                 img {
+                    width: 300px;
+                    height: 300px;
                     border-radius: 15px;
+                    object-fit: cover;
+                }
+            }
+
+            .imagen2 {
+                display: none;
+            }
+
+            svg {
+                cursor: pointer;
+            }
+
+            .check-carousel {
+                display: none;
+
+                &:checked~.imagen1 {
+                    display: none;
+                }
+
+                &:checked~.imagen2 {
+                    display: flex;
                 }
             }
         }
+    }
+}
+@media screen and (min-width: 900px) {
+    .trabajos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr)!important;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .trabajos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr)!important;
     }
 }

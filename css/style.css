@@ -7,11 +7,11 @@
 /*button-----------------------------------------------------------------------*/
 .button-48 {
   appearance: none;
-  background-color: #E4BB97;
+  background-color: #4191c7;
   border: none;
   border-radius: 15px;
   box-sizing: border-box;
-  color: #584B53;
+  color: #22405a;
   cursor: pointer;
   display: inline-block;
   font-weight: 500;
@@ -37,7 +37,7 @@
 .button-48:before {
   animation: opacityFallbackOut .5s step-end forwards;
   backface-visibility: hidden;
-  background-color: #FEF5EF;
+  background-color: #ffece0;
   clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
   content: "";
   height: 100%;
@@ -71,20 +71,20 @@ body {
     transform: translateY(0); }
 
 nav {
-  background-color: #E4BB97;
+  background-color: #4191c7;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 7%;
   height: 75px;
-  color: #FEF5EF; }
+  color: #ffece0; }
   nav .navbar-toggler {
     display: none;
     padding: 2px 12px;
     font-size: 50px;
-    color: #FEF5EF;
+    color: #ffece0;
     cursor: pointer;
-    border: solid 3px #FEF5EF;
+    border: solid 3px #ffece0;
     border-radius: 10px;
     transition: .4s; }
   nav .navbar-brand {
@@ -109,10 +109,10 @@ nav {
       cursor: pointer;
       height: 100%; }
       nav .navbar-list .nav-item a {
-        color: #FEF5EF;
+        color: #ffece0;
         transition: .4s; }
         nav .navbar-list .nav-item a:hover {
-          color: #584B53;
+          color: #22405a;
           font-size: larger; }
 
 @media screen and (max-width: 935px) {
@@ -125,7 +125,7 @@ nav {
   nav .navbar-list {
     display: grid;
     position: absolute;
-    background-color: #E4BB97;
+    background-color: #4191c7;
     width: 100%;
     top: 75px;
     left: 0;
@@ -149,7 +149,7 @@ nav {
   align-items: center;
   position: relative;
   z-index: -2;
-  color: #FEF5EF; }
+  color: #ffece0; }
   .hero .hero-content {
     display: flex;
     flex-direction: column;
@@ -173,7 +173,7 @@ nav {
 
 /*servicios------------------------------------------------------------------------*/
 #servicios {
-  background-color: #584B53;
+  background-color: #22405a;
   position: relative;
   z-index: -2; }
 
@@ -183,7 +183,7 @@ nav {
   justify-content: center;
   align-items: center;
   padding: 15% 0;
-  color: #FEF5EF;
+  color: #ffece0;
   gap: 4rem; }
   .servicios-container h5 {
     margin: 0; }
@@ -195,7 +195,7 @@ nav {
     gap: 4rem; }
     .servicios-container .servicios-description h2 {
       margin: 0;
-      color: #E4BB97;
+      color: #4191c7;
       padding-bottom: 2rem; }
     .servicios-container .servicios-description ul {
       display: flex;
@@ -205,7 +205,7 @@ nav {
       padding: 0;
       list-style: none; }
       .servicios-container .servicios-description ul b {
-        color: #E4BB97; }
+        color: #4191c7; }
       .servicios-container .servicios-description ul li {
         text-align: start; }
   .servicios-container video {
@@ -227,7 +227,7 @@ nav {
 
 /*sobre nosotros------------------------------------------*/
 #sobre-nosotros {
-  background-color: #453941; }
+  background-color: #173753; }
 
 .sobre-nosotros-container {
   padding: 15% 0;
@@ -235,7 +235,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #E4BB97; }
+  color: #4191c7; }
   .sobre-nosotros-container h2,
   .sobre-nosotros-container .quienes-somos img,
   .sobre-nosotros-container .clientes h3 {
@@ -250,7 +250,7 @@ nav {
       width: 85%;
       border-radius: 15px; }
     .sobre-nosotros-container .quienes-somos p {
-      color: #FEF5EF; }
+      color: #ffece0; }
   .sobre-nosotros-container .clientes {
     margin-top: 8rem; }
     .sobre-nosotros-container .clientes .clientes-img {
@@ -279,7 +279,7 @@ nav {
 
 /*nuestros trabajos-----------------------------------------------------------*/
 #nuestros-trabajos {
-  background-color: #584B53; }
+  background-color: #22405a; }
 
 .trabajos-container {
   padding: 15% 0;
@@ -289,7 +289,7 @@ nav {
   align-items: center;
   gap: 4rem; }
   .trabajos-container h2 {
-    color: #E4BB97; }
+    color: #4191c7; }
   .trabajos-container .galeria {
     width: 80%;
     display: grid;
@@ -298,11 +298,11 @@ nav {
     column-gap: 2rem;
     row-gap: 2rem; }
     .trabajos-container .galeria .cards {
-      background-color: #E4BB97;
+      background-color: #4191c7;
       padding: 15px;
       border-radius: 15px; }
       .trabajos-container .galeria .cards p {
-        color: #584B53;
+        color: #22405a;
         margin: 5px 0;
         font-weight: 500; }
       .trabajos-container .galeria .cards img {
@@ -325,7 +325,7 @@ nav {
 
 /*presupuesto------------------------------------------------------------------*/
 #presupuesto {
-  background-color: #453941; }
+  background-color: #173753; }
 
 .presupuesto-container {
   display: flex;
@@ -334,11 +334,11 @@ nav {
   align-items: center;
   padding: 15% 0; }
   .presupuesto-container h2 {
-    color: #E4BB97;
+    color: #4191c7;
     margin-bottom: 2rem; }
   .presupuesto-container form {
     width: 80%;
-    background-color: #584B53;
+    background-color: #22405a;
     padding: 2rem;
     border-radius: 15px;
     display: flex;
@@ -350,14 +350,14 @@ nav {
     .presupuesto-container form select {
       width: 100%;
       padding: 5px;
-      background-color: #FEF5EF;
+      background-color: #ffece0;
       border-radius: 5px; }
     .presupuesto-container form select {
       width: auto; }
     .presupuesto-container form .options-container {
       width: 100%; }
       .presupuesto-container form .options-container p {
-        color: #FEF5EF; }
+        color: #ffece0; }
     .presupuesto-container form .options {
       display: flex;
       flex-direction: row;
@@ -369,11 +369,11 @@ nav {
       border: none;
       background: none;
       font-weight: 500;
-      color: #584B53; }
+      color: #22405a; }
 
 /*contacto----------------------------------------------------------------------*/
 #contactanos {
-  background-color: #584B53; }
+  background-color: #22405a; }
 
 .contactanos-container {
   padding: 15% 0;
@@ -381,11 +381,11 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #FEF5EF;
+  color: #ffece0;
   gap: 2rem; }
   .contactanos-container h4,
   .contactanos-container h5 {
-    color: #E4BB97; }
+    color: #4191c7; }
   .contactanos-container h4,
   .contactanos-container h5,
   .contactanos-container p {
@@ -424,7 +424,7 @@ nav {
 /*page pileta-------------------------------------------------------------------*/
 /*page pileta-------------------------------------------------------------------*/
 #arenado {
-  background-color: #584B53; }
+  background-color: #22405a; }
   #arenado .arenado-container {
     display: flex;
     flex-direction: column;
@@ -432,16 +432,36 @@ nav {
     align-items: center; }
     #arenado .arenado-container h1 {
       padding: 4rem 0;
-      color: #E4BB97; }
+      color: #4191c7; }
     #arenado .arenado-container .trabajos {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
-      column-gap: 2rem;
-      row-gap: 2rem; }
+      gap: 3rem; }
       #arenado .arenado-container .trabajos .carousel {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-items: center; }
         #arenado .arenado-container .trabajos .carousel img {
-          border-radius: 15px; }
+          width: 300px;
+          height: 300px;
+          border-radius: 15px;
+          object-fit: cover; }
+      #arenado .arenado-container .trabajos .imagen2 {
+        display: none; }
+      #arenado .arenado-container .trabajos svg {
+        cursor: pointer; }
+      #arenado .arenado-container .trabajos .check-carousel {
+        display: none; }
+        #arenado .arenado-container .trabajos .check-carousel:checked ~ .imagen1 {
+          display: none; }
+        #arenado .arenado-container .trabajos .check-carousel:checked ~ .imagen2 {
+          display: flex; }
+
+@media screen and (min-width: 900px) {
+  .trabajos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important; } }
+
+@media screen and (min-width: 1440px) {
+  .trabajos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important; } }
