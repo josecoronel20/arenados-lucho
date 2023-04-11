@@ -7,7 +7,7 @@
 /*button-----------------------------------------------------------------------*/
 .button-48 {
   appearance: none;
-  background-color: #4191c7;
+  background-color: #5e9fca;
   border: none;
   border-radius: 15px;
   box-sizing: border-box;
@@ -71,7 +71,7 @@ body {
     transform: translateY(0); }
 
 nav {
-  background-color: #4191c7;
+  background-color: #5e9fca;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -89,13 +89,16 @@ nav {
     transition: .4s; }
   nav .navbar-brand {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    font-size: 28px;
+    justify-content: center;
+    font-size: 20px;
     font-weight: 500;
     letter-spacing: .5px; }
     nav .navbar-brand p {
       margin: 0; }
+    nav .navbar-brand img {
+      width: 120px; }
   nav a {
     text-decoration: none; }
   nav .navbar-list {
@@ -125,7 +128,7 @@ nav {
   nav .navbar-list {
     display: grid;
     position: absolute;
-    background-color: #4191c7;
+    background-color: #5e9fca;
     width: 100%;
     top: 75px;
     left: 0;
@@ -195,7 +198,7 @@ nav {
     gap: 4rem; }
     .servicios-container .servicios-description h2 {
       margin: 0;
-      color: #4191c7;
+      color: #5e9fca;
       padding-bottom: 2rem; }
     .servicios-container .servicios-description ul {
       display: flex;
@@ -205,7 +208,7 @@ nav {
       padding: 0;
       list-style: none; }
       .servicios-container .servicios-description ul b {
-        color: #4191c7; }
+        color: #5e9fca; }
       .servicios-container .servicios-description ul li {
         text-align: start; }
   .servicios-container video {
@@ -235,7 +238,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #4191c7; }
+  color: #5e9fca; }
   .sobre-nosotros-container h2,
   .sobre-nosotros-container .quienes-somos img,
   .sobre-nosotros-container .clientes h3 {
@@ -252,7 +255,8 @@ nav {
     .sobre-nosotros-container .quienes-somos p {
       color: #ffece0; }
   .sobre-nosotros-container .clientes {
-    margin-top: 8rem; }
+    margin-top: 8rem;
+    display: none; }
     .sobre-nosotros-container .clientes .clientes-img {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -289,7 +293,7 @@ nav {
   align-items: center;
   gap: 4rem; }
   .trabajos-container h2 {
-    color: #4191c7; }
+    color: #5e9fca; }
   .trabajos-container .galeria {
     width: 80%;
     display: grid;
@@ -298,7 +302,7 @@ nav {
     column-gap: 2rem;
     row-gap: 2rem; }
     .trabajos-container .galeria .cards {
-      background-color: #4191c7;
+      background-color: #5e9fca;
       padding: 15px;
       border-radius: 15px; }
       .trabajos-container .galeria .cards p {
@@ -334,7 +338,7 @@ nav {
   align-items: center;
   padding: 15% 0; }
   .presupuesto-container h2 {
-    color: #4191c7;
+    color: #5e9fca;
     margin-bottom: 2rem; }
   .presupuesto-container form {
     width: 80%;
@@ -373,7 +377,7 @@ nav {
 
 /*contacto----------------------------------------------------------------------*/
 #contactanos {
-  background-color: #22405a; }
+  background-color: #173753; }
 
 .contactanos-container {
   padding: 15% 0;
@@ -385,7 +389,7 @@ nav {
   gap: 2rem; }
   .contactanos-container h4,
   .contactanos-container h5 {
-    color: #4191c7; }
+    color: #5e9fca; }
   .contactanos-container h4,
   .contactanos-container h5,
   .contactanos-container p {
@@ -400,6 +404,9 @@ nav {
     border-radius: 15px;
     margin-top: 2rem;
     width: 100%; }
+  .contactanos-container .info-container a {
+    color: #ffece0;
+    text-decoration: none; }
 
 @media screen and (min-width: 768px) {
   .info-container {
@@ -424,7 +431,9 @@ nav {
 /*page pileta-------------------------------------------------------------------*/
 /*page pileta-------------------------------------------------------------------*/
 #arenado {
-  background-color: #22405a; }
+  background-color: #22405a;
+  position: relative;
+  z-index: -10; }
   #arenado .arenado-container {
     display: flex;
     flex-direction: column;
@@ -432,11 +441,12 @@ nav {
     align-items: center; }
     #arenado .arenado-container h1 {
       padding: 4rem 0;
-      color: #4191c7; }
+      color: #5e9fca; }
     #arenado .arenado-container .trabajos {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
-      gap: 3rem; }
+      gap: 3rem;
+      margin-bottom: 4rem; }
       #arenado .arenado-container .trabajos .carousel {
         display: flex;
         align-items: center; }

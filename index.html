@@ -16,6 +16,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap"
         rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <meta name="keywords" content="">
+    <meta name="keywords" content="arenados, sandblasting, Argentina, servicio de arenado, tratamiento de superficies, limpieza con abrasivos, restauración de superficies">
+    <meta name="description" content="Descubre nuestros servicios de arenado profesional para remoción de óxido y limpieza de superficies metálicas. Restauramos chapas de autos y materiales oxidados con técnicas de arenado abrasivo. Mejora la apariencia y durabilidad de tus metales con nuestro servicio de arenado de alta calidad.">
+
 
 
 </head>
@@ -26,7 +31,7 @@
 
         <nav>
             <a href="index.html" class="navbar-brand">
-                <img src="" alt="">
+                <img src="img/logo-arenados [Recuperado].svg" alt="">
                 <p href="">ARENADOS LUCHO</p>
             </a>
 
@@ -57,7 +62,7 @@
     <section class="hero">
         <div class="hero-content">
             <div class="logo-hero">
-                <img src="" alt="">
+                <img src="img/logo-arenados [Recuperado].svg" alt="">
                 <h1>ARENADOS LUCHO</h1>
             </div>
             <h5>Nos especializamos en la recuperación de superficies mediante el arenado por chorro de arena a presión.
@@ -145,23 +150,27 @@
             <div class="galeria">
                 <div class="cards">
                     <img src="img/portada-arenado.jpeg" alt="">
-                    <p>Trabajos de pileta</p>
-                    <a href="pages/pileta.html"><button class="button-48" role="button"><span class="text">Ver más</span></button></a>
+                    <p>Trabajos en pileta.</p>
+                    <a href="pages/pileta.html"><button class="button-48" role="button"><span class="text">Ver
+                                más</span></button></a>
                 </div>
                 <div class="cards">
                     <img src="img/portada-pared.jpeg" alt="">
-                    <p>Trabajos sobre pared</p>
-                    <a href="pages/paredes.html"><button class="button-48" role="button"><span class="text">Ver más</span></button></a>
+                    <p>Trabajos sobre pared.</p>
+                    <a href="pages/paredes.html"><button class="button-48" role="button"><span class="text">Ver
+                                más</span></button></a>
                 </div>
                 <div class="cards">
                     <img src="img/portada-pintura.jpeg" alt="">
-                    <p>Trabajos de arenado y pintura</p>
-                    <a href="pages/pintura.html"><button class="button-48" role="button"><span class="text">Ver más</span></button></a>
+                    <p>Trabajos de arenado y pintura.</p>
+                    <a href="pages/pintura.html"><button class="button-48" role="button"><span class="text">Ver
+                                más</span></button></a>
                 </div>
                 <div class="cards">
                     <img src="img/carroceria8-a.jpg" alt="">
-                    <p>Trabajos de arenado en carrocerias</p>
-                    <a href="pages/carrocerias.html"><button class="button-48" role="button"><span class="text">Ver más</span></button></a>
+                    <p>Trabajos de arenado en piezas metálicas.</p>
+                    <a href="pages/carrocerias.html"><button class="button-48" role="button"><span class="text">Ver
+                                más</span></button></a>
                 </div>
                 <!-- agregar cards con imagenes de trabajos -->
             </div>
@@ -170,8 +179,7 @@
     <section id="presupuesto">
         <div class="container presupuesto-container">
             <h2>PEDÍ TU PRESUPUESTO</h2>
-            <form id="form" action="https://formspree.io/f/xrgvqzze"
-            method="POST">
+            <form id="form" action="https://formspree.io/f/xrgvqzze" method="POST">
                 <input type="text" name="Nombre y apellido" placeholder="Nombre y apellido" id="" required>
 
                 <input type="number" name="Número de telefono" placeholder="Número de telefono" id="" required>
@@ -214,23 +222,23 @@
         </a>
     </div>
     <div class="button-wpp">
-        <a href="https://wa.me/541154797863">
+        <a href="https://wa.me/541123787750">
             <iconify-icon icon="ic:baseline-whatsapp" style="color: #25d366;" width="50"></iconify-icon>
         </a>
     </div>
 
     <footer id="contactanos">
         <div class="container contactanos-container">
-            <div class="logo-footer">
-                <img src="" alt="">
-                <h5>ARENADOS LUCHO</h5>
+            <div class="logo-hero">
+                <img src="img/logo-arenados [Recuperado].svg" alt="">
+                <h1>ARENADOS LUCHO</h1>
             </div>
             <div class="info-container">
                 <div>
                     <h4>Contactanos</h4>
                     <div>
                         <p>Número de telefono: 11 2378-7750 / 11 3433-5049</p>
-                        <p>Mail: Arenadoslucho@hotmial.com</p>
+                        <a href="mailto:arenadoslucho@hotmail.com">Mail: Arenadoslucho@hotmail.com</a>
                     </div>
                 </div>
                 <div>
@@ -262,7 +270,7 @@
                     "Accept": "application/json"
                 }
             })
-            if (response.ok){
+            if (response.ok) {
                 this.reset()
                 alert("!Gracias por contactarnos, te responderemos a la brevedad¡")
             }
