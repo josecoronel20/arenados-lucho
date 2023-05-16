@@ -171,7 +171,7 @@ nav {
         .navbar-list {
             display: grid;
             position: absolute;
-            background-color: $claroS;
+            background-color:#5e9fca9a;
             width: 100%;
             top: 75px;
             left: 0;
@@ -193,7 +193,7 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 90vh;
+    height: 93vh;
     @include d-flex-column(column, center);
     position: relative;
     z-index: -2;
@@ -579,7 +579,8 @@ nav {
 
         h1 {
             padding: 4rem 0;
-            color: $claroS;
+            color: $claro;
+            font-weight: 400;
         }
 
 
@@ -597,6 +598,7 @@ nav {
                     width: 300px;
                     height: 300px;
                     border-radius: 15px;
+                    border: solid 5px $claroS;
                     object-fit: cover;
                 }
             }
@@ -635,5 +637,35 @@ nav {
     .trabajos {
         display: grid;
         grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .trabajos{
+        .carousel{
+            img{
+                width: 195px!important;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 380px) {
+    .trabajos{
+        .carousel{
+            img{
+                width: 250px!important;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 450px) {
+    .trabajos{
+        .carousel{
+            img{
+                width: 300px!important;
+            }
+        }
     }
 }

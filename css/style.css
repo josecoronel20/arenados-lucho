@@ -128,7 +128,7 @@ nav {
   nav .navbar-list {
     display: grid;
     position: absolute;
-    background-color: #5e9fca;
+    background-color: #5e9fca9a;
     width: 100%;
     top: 75px;
     left: 0;
@@ -145,7 +145,7 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 90vh;
+  height: 93vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -441,7 +441,8 @@ nav {
     align-items: center; }
     #arenado .arenado-container h1 {
       padding: 4rem 0;
-      color: #5e9fca; }
+      color: #ffece0;
+      font-weight: 400; }
     #arenado .arenado-container .trabajos {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
@@ -454,6 +455,7 @@ nav {
           width: 300px;
           height: 300px;
           border-radius: 15px;
+          border: solid 5px #5e9fca; 
           object-fit: cover; }
       #arenado .arenado-container .trabajos .imagen2 {
         display: none; }
@@ -475,3 +477,15 @@ nav {
   .trabajos {
     display: grid;
     grid-template-columns: repeat(3, 1fr) !important; } }
+
+@media screen and (max-width: 380px) {
+  .trabajos .carousel img {
+    width: 195px !important; } }
+
+@media screen and (min-width: 380px) {
+  .trabajos .carousel img {
+    width: 250px !important; } }
+
+@media screen and (min-width: 450px) {
+  .trabajos .carousel img {
+    width: 300px !important; } }
